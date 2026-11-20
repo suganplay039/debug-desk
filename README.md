@@ -127,7 +127,9 @@ frontend/src/
 
 ### Why port 8001 and 5174 instead of the usual 8000 and 5173?
 
-FastAPI (Uvicorn) normally starts on **8000** and Vite on **5173**. This project uses **8001** and **5174** instead, so it can run alongside another FastAPI or Vite project that is already using the default ports. A port can only be used by one program at a time.
+FastAPI (Uvicorn) normally starts on **8000** and Vite on **5173**. During the live session, another example project with the same setup was already running on those default ports. A port can only be used by one program at a time, so this project was started on the next free ports, **8001** and **5174**, and the code was written to match.
+
+You'll meet the same situation whenever you run two projects at once.
 
 That's why the commands include `--port 8001` and `--port 5174`. If you leave them out, the servers start on the defaults, and the app won't be able to connect.
 
