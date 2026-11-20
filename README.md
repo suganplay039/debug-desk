@@ -20,7 +20,7 @@ You can view, create, edit and delete issues. Every action is a real API request
 ## 1. Get the code
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/suganplay039/debug-desk.git
 cd debug-desk
 ```
 
